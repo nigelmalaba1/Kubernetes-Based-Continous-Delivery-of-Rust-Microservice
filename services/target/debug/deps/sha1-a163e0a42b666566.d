@@ -1,0 +1,10 @@
+/Users/nigelmalaba/Desktop/Duke Spring 2023/IDS721/Kubernetes-Based-Continous-Delivery-of-Rust-Microservice/services/target/debug/deps/sha1-a163e0a42b666566.rmeta: /Users/nigelmalaba/.cargo/registry/src/github.com-1ecc6299db9ec823/sha1-0.10.5/src/lib.rs /Users/nigelmalaba/.cargo/registry/src/github.com-1ecc6299db9ec823/sha1-0.10.5/src/compress.rs /Users/nigelmalaba/.cargo/registry/src/github.com-1ecc6299db9ec823/sha1-0.10.5/src/compress/soft.rs /Users/nigelmalaba/.cargo/registry/src/github.com-1ecc6299db9ec823/sha1-0.10.5/src/compress/x86.rs
+
+/Users/nigelmalaba/Desktop/Duke Spring 2023/IDS721/Kubernetes-Based-Continous-Delivery-of-Rust-Microservice/services/target/debug/deps/libsha1-a163e0a42b666566.rlib: /Users/nigelmalaba/.cargo/registry/src/github.com-1ecc6299db9ec823/sha1-0.10.5/src/lib.rs /Users/nigelmalaba/.cargo/registry/src/github.com-1ecc6299db9ec823/sha1-0.10.5/src/compress.rs /Users/nigelmalaba/.cargo/registry/src/github.com-1ecc6299db9ec823/sha1-0.10.5/src/compress/soft.rs /Users/nigelmalaba/.cargo/registry/src/github.com-1ecc6299db9ec823/sha1-0.10.5/src/compress/x86.rs
+
+/Users/nigelmalaba/Desktop/Duke Spring 2023/IDS721/Kubernetes-Based-Continous-Delivery-of-Rust-Microservice/services/target/debug/deps/sha1-a163e0a42b666566.d: /Users/nigelmalaba/.cargo/registry/src/github.com-1ecc6299db9ec823/sha1-0.10.5/src/lib.rs /Users/nigelmalaba/.cargo/registry/src/github.com-1ecc6299db9ec823/sha1-0.10.5/src/compress.rs /Users/nigelmalaba/.cargo/registry/src/github.com-1ecc6299db9ec823/sha1-0.10.5/src/compress/soft.rs /Users/nigelmalaba/.cargo/registry/src/github.com-1ecc6299db9ec823/sha1-0.10.5/src/compress/x86.rs
+
+/Users/nigelmalaba/.cargo/registry/src/github.com-1ecc6299db9ec823/sha1-0.10.5/src/lib.rs:
+/Users/nigelmalaba/.cargo/registry/src/github.com-1ecc6299db9ec823/sha1-0.10.5/src/compress.rs:
+/Users/nigelmalaba/.cargo/registry/src/github.com-1ecc6299db9ec823/sha1-0.10.5/src/compress/soft.rs:
+/Users/nigelmalaba/.cargo/registry/src/github.com-1ecc6299db9ec823/sha1-0.10.5/src/compress/x86.rs:
