@@ -1,19 +1,3 @@
-// use actix_web::{web, App, HttpServer};
-
-// async fn index() -> &'static str {
-//     "Hello, World! This is Microservice Number One Here Providing Data to your client"
-// }
-
-// #[actix_web::main]
-// async fn main() -> std::io::Result<()> {
-//     HttpServer::new(|| {
-//         App::new().route("/", web::get().to(index))
-//     })
-//     .bind("127.0.0.1:8080")?
-//     .run()
-//     .await
-// }
-
 //write an actix microservice with multiple routes
 // A. route / that returns a string "Hello, World!"
 // B. route /health that returns a 200 status code
