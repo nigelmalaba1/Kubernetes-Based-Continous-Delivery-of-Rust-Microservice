@@ -100,7 +100,9 @@ Cleanup
 `kubectl delete deployment hello-fastapi`
 `minikube stop`
 
+## Project Presentation
 
+https://www.beautiful.ai/player/-NPQacppTuo7JwNYD92O
 
 ## Conclusion
 This is a simple Actix microservice with multiple routes that you can use as a starting point for building your own microservice.
