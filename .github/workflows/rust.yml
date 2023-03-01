@@ -1,4 +1,4 @@
-name: Clippy
+name: Build binary release
 
 on: [push, pull_request]
 
@@ -15,5 +15,4 @@ jobs:
           components: clippy, rustfmt
           override: true
       - name: Run clippy
-        run: make lint
-
+        run: make build-release
