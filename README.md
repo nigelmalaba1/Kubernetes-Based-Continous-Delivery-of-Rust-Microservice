@@ -86,7 +86,9 @@ Curl the url shown, for example: `curl http://192.168.49.2:31839` or change to y
 ## Cleanup
 
 `kubectl delete service hello-node`
+
 `kubectl delete deployment hello-node`
+
 `minikube stop`
 
 # Deploy with Kubernetes 
@@ -99,7 +101,7 @@ Push container to DockerHub (Optional): i.e. `docker build -t <hub-user>/<repo-n
 
 Hover over link and "follow link"
 
-Create a deployment: `kubectl create deployment hello-fastapi --image=registry.hub.docker.com/noahgift/fastapi-kube`
+Create a deployment: `kubectl create deployment hello-api --image=registry.hub.docker.com/<hub-user>/<repo-name>
 
 View deployment: `kubectl get deployments`
 
@@ -115,7 +117,9 @@ Curl web service: i.e. `curl http://192.168.49.2:31224`
 Cleanup
 
 `kubectl delete service hello-fastapi`
+
 `kubectl delete deployment hello-fastapi`
+
 `minikube stop`
 
 ## Project Presentation
