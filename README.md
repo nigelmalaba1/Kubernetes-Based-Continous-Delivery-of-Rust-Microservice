@@ -60,18 +60,27 @@ This is a command in the Rust programming language that is used to compile a Rus
 5. Set up Cargo.toml to determine the dependencies and build configuration of the project.
 
 
-## Kubernetes Deployment 
-# Minikube Lab (based on official tutorial on https://kubernetes.io)
+# Kubernetes Deployment 
+## Minikube Lab (based on official tutorial on https://kubernetes.io)
 
 Launch GitHub Codespace
+
 Run `minikube start` to start cluster
+
 Run `minikube dashboard --url` to view dashboard in a new terminal
+
 Hover over link and "follow link"
+
 Create a deployment: `kubectl create deployment hello-node --image=registry.k8s.io/e2e-test-images/agnhost:2.39 -- /agnhost netexec --http-port=8080`
+
 View deployment: `kubectl get deployments`
+
 View pods: `kubectl get pods`
+
 Create service and expose it: `kubectl expose deployment hello-node --type=LoadBalancer --port=8080`
+
 View services: `kubectl get services`
+
 Curl the url shown, for example: `curl http://192.168.49.2:31839` or change to your URL.
 
 ## Cleanup
@@ -81,16 +90,25 @@ Curl the url shown, for example: `curl http://192.168.49.2:31839` or change to y
 `minikube stop`
 
 # Deploy with Kubernetes 
+
 Push container to DockerHub (Optional): i.e. `docker build -t <hub-user>/<repo-name>[:<tag>] .` and `docker push <hub-user>/<repo-name>:<tag> .`
 
 `minikube start`
+
 `minikube dashboard --url`
+
 Hover over link and "follow link"
+
 Create a deployment: `kubectl create deployment hello-fastapi --image=registry.hub.docker.com/noahgift/fastapi-kube`
+
 View deployment: `kubectl get deployments`
+
 Create service and expose it: `kubectl expose deployment hello-fastapi --type=LoadBalancer --port=8080`
+
 View services: `kubectl get service actix-service `
+
 `minikube service actix-service --url`
+
 Curl web service: i.e. `curl http://192.168.49.2:31224`
 
 ## Cleanup
