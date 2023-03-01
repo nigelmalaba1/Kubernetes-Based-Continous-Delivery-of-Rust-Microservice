@@ -79,7 +79,7 @@ Curl the url shown, for example: `curl http://192.168.49.2:31839` or change to y
 `minikube stop`
 
 # Deploy with Kubernetes 
-Push container to DockerHub (Optional): i.e. docker build -t <hub-user>/<repo-name>[:<tag>] and docker push <hub-user>/<repo-name>:<tag> 
+Push container to DockerHub (Optional): i.e. `docker build -t <hub-user>/<repo-name>[:<tag>] .` and `docker push <hub-user>/<repo-name>:<tag> .`
 
 `minikube start`
 `minikube dashboard --url`
