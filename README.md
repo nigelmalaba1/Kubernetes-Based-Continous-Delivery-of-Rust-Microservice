@@ -86,13 +86,20 @@ Hover over link and "follow link"
 
 Create a deployment: `kubectl create deployment hello-node --image=registry.k8s.io/e2e-test-images/agnhost:2.39 -- /agnhost netexec --http-port=8080`
 
+<img width="1434" alt="Screenshot 2023-03-04 at 3 38 15 PM" src="https://user-images.githubusercontent.com/123284219/222927756-0adce024-3d94-408e-a8a8-a77e6e09dfd1.png">
+
+
 View deployment: `kubectl get deployments`
 
 View pods: `kubectl get pods`
 
+
 Create service and expose it: `kubectl expose deployment hello-node --type=LoadBalancer --port=8080`
 
 View services: `kubectl get services`
+
+<img width="948" alt="Screenshot 2023-03-04 at 3 30 24 PM" src="https://user-images.githubusercontent.com/123284219/222927784-78ffd0a9-38fd-48a9-98b8-595c8d614058.png">
+
 
 Curl the url shown, for example: `curl http://192.168.49.2:31839` or change to your URL.
 
@@ -108,21 +115,27 @@ Curl the url shown, for example: `curl http://192.168.49.2:31839` or change to y
 
 Push container to DockerHub (Optional): i.e. `docker build -t <hub-user>/<repo-name>[:<tag>] .` and `docker push <hub-user>/<repo-name>:<tag> .`
 
+<img width="1080" alt="Screenshot 2023-03-04 at 3 32 31 PM" src="https://user-images.githubusercontent.com/123284219/222927886-48aad9cb-a9e9-4c1e-9861-3082edaff5f3.png">
+
+
 `minikube start`
 
 `minikube dashboard --url`
 
 Hover over link and "follow link"
 
-Create a deployment: `kubectl create deployment hello-api --image=registry.hub.docker.com/<hub-user>/<repo-name>
+Create a deployment: `kubectl create deployment actixapi --image=registry.hub.docker.com/<hub-user>/<repo-name>
 
 View deployment: `kubectl get deployments`
 
-Create service and expose it: `kubectl expose deployment hello-fastapi --type=LoadBalancer --port=8080`
+Create service and expose it: `kubectl expose deployment actixapi --type=LoadBalancer --port=8080`
 
-View services: `kubectl get service actix-service `
+View services: `kubectl get service actixapi `
 
-`minikube service actix-service --url`
+`minikube service actixapi --url`
+
+<img width="815" alt="Screenshot 2023-03-04 at 3 38 01 PM" src="https://user-images.githubusercontent.com/123284219/222927892-c1c94c36-6ef8-41c5-96d3-c02e6a5d8794.png">
+
 
 Curl web service: i.e. `curl http://192.168.49.2:31224`
 
@@ -134,6 +147,7 @@ Cleanup
 `kubectl delete deployment hello-fastapi`
 
 `minikube stop`
+
 
 # Architecture Diagram
 
