@@ -1,5 +1,8 @@
 [![Build binary release](https://github.com/nigelmalaba1/Kubernetes-Based-Continous-Delivery-of-Rust-Microservice/actions/workflows/rust.yml/badge.svg)](https://github.com/nigelmalaba1/Kubernetes-Based-Continous-Delivery-of-Rust-Microservice/actions/workflows/rust.yml)
 
+[![Build binary release](https://github.com/nigelmalaba1/Kubernetes-Based-Continous-Delivery-of-Rust-Microservice/actions/workflows/release.yml/badge.svg)](https://github.com/nigelmalaba1/Kubernetes-Based-Continous-Delivery-of-Rust-Microservice/actions/workflows/release.yml)
+
+
 # Kubernetes-Based-Continous-Delivery-of-Actix-Microservice
 
 This is an Actix microservice with five routes that return different responses to incoming requests. The microservice is built using the Actix-Web framework and uses Rust programming language.
