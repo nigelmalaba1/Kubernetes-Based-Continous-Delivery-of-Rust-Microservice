@@ -98,10 +98,12 @@ Create service and expose it: `kubectl expose deployment hello-node --type=LoadB
 
 View services: `kubectl get services`
 
+Curl the url shown, for example: `curl http://192.168.49.2:31839` or change to your URL.
+
 <img width="948" alt="Screenshot 2023-03-04 at 3 30 24 PM" src="https://user-images.githubusercontent.com/123284219/222927784-78ffd0a9-38fd-48a9-98b8-595c8d614058.png">
 
 
-Curl the url shown, for example: `curl http://192.168.49.2:31839` or change to your URL.
+
 
 ## Cleanup
 
@@ -134,10 +136,12 @@ View services: `kubectl get service actixapi `
 
 `minikube service actixapi --url`
 
+Curl web service: i.e. `curl http://192.168.49.2:31224`
+
 <img width="815" alt="Screenshot 2023-03-04 at 3 38 01 PM" src="https://user-images.githubusercontent.com/123284219/222927892-c1c94c36-6ef8-41c5-96d3-c02e6a5d8794.png">
 
 
-Curl web service: i.e. `curl http://192.168.49.2:31224`
+
 
 ## Cleanup
 Cleanup
