@@ -135,6 +135,61 @@ Cleanup
 
 `minikube stop`
 
+# Architecture Diagram
+
+                                      +----------------------+
+                                      |      GitHub Repo      |
+                                      +----------+-----------+
+                                                 |
+                                                 |
+                                                 |
+                                                 |
+                                 +---------------v--------------+
+                                 |        GitHub Codespaces      |
+                                 +---------------+--------------+
+                                                 |
+                                                 |
+                                                 |
+                                                 |
+                     +---------------------------v---------------------------+
+                     |                        Rust Microservices                 |
+                     |                  (developed on AWS Cloud9)              |
+                     +---------------------------+---------------------------+
+                                                 |
+                                                 |
+                                                 |
+              +----------------------------------+--------------------------------+
+              |                                    |                                 |
+              |                                    |                                 |
+              |                                    |                                 |
+              |                                    |                                 |
++-------------v---------+              +-----------v------------+          +--------v--------+
+|    Docker Registry    |              |     Kubernetes Cluster    |          |       Service       |
++-----------------------+              +---------------------------+          +--------------------+
+           |                                    |                                 |
+           |                                    |                                 |
+           |                                    |                                 |
+           |                                    |                                 |
++----------v-----------+              +----------v-------------+            +-- ... --+
+|     Docker Image      |              |    Deployment Object   |            | Kubernetes Pod |
++-----------------------+              +-----------------------+            +----------------+
+
+
+
+##Explanation of the architecture:
+
+The microservices are developed using Rust programming language on AWS Cloud9, which is a cloud-based integrated development environment (IDE). The code is version-controlled using GitHub and is stored in a GitHub repository.
+
+The developers use GitHub Codespaces, a cloud-based development environment that allows developers to develop and test code without having to set up a local development environment.
+
+The Docker images for the microservices are built and stored in a Docker registry, such as Docker Hub.
+
+The Kubernetes cluster is created using Minikube, a tool that allows you to run a Kubernetes cluster on a single machine. The deployment object is defined in Kubernetes to deploy the microservices and manage their resources.
+
+The service exposes the microservices to the outside world and routes the requests to the appropriate Kubernetes pods.
+
+Overall, this architecture enables developers to work on the microservices in a cloud-based environment without having to worry about local setup. The microservices can be easily deployed and scaled using Kubernetes.
+
 ## Project Presentation
 
 https://www.beautiful.ai/player/-NPQacppTuo7JwNYD92O
