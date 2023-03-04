@@ -8,23 +8,36 @@ This is a simple Actix microservice with five routes that return different respo
 The microservice has the following routes:
 
 / : returns a string "Hello, World!"
+
 /health : returns a 200 status code
+
 /Gold : returns a string "Gold Status"
+
 /Silver : returns a string "Silver Status"
+
 /Bronze : returns a string "Bronze Status"
 
 # Usage
 To use this microservice, follow these steps:
 
-Clone the repository on your local machine using the git clone command.
-Make sure you have Rust programming language installed on your machine.
-Navigate to the project directory using your terminal.
-Run the command cargo run to start the server.
+1. Clone the repository on your local machine using the git clone command.
+
+2. Make sure you have Rust programming language installed on your machine.
+
+3. Navigate to the project directory using your terminal.
+
+4. Run the command cargo run to start the server.
+
 Visit http://127.0.0.1:8080/ to see the "Hello, World!" message.
+
 Visit http://127.0.0.1:8080/health to get a 200 status code.
+
 Visit http://127.0.0.1:8080/Gold to get "Gold Status" message.
+
 Visit http://127.0.0.1:8080/Silver to get "Silver Status" message.
+
 Visit http://127.0.0.1:8080/Bronze to get "Bronze Status" message.
+
 
 ## Configuration Steps
 
