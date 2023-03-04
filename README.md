@@ -140,7 +140,7 @@ Cleanup
 ![Microservices Kubernetes Deployment](https://user-images.githubusercontent.com/123284219/222927001-04bbaac4-f7a3-489a-bb81-d0f4e5b0a236.jpeg)
 
 
-##Explanation of the architecture:
+## Explanation of the architecture:
 
 The microservices are developed using Rust programming language on AWS Cloud9, which is a cloud-based integrated development environment (IDE). The code is version-controlled using GitHub and is stored in a GitHub repository.
 
