@@ -2,7 +2,7 @@
 
 # Kubernetes-Based-Continous-Delivery-of-Actix-Microservice
 
-This is a simple Actix microservice with five routes that return different responses to incoming requests. The microservice is built using the Actix-Web framework and uses Rust programming language.
+This is an Actix microservice with five routes that return different responses to incoming requests. The microservice is built using the Actix-Web framework and uses Rust programming language.
 
 # Routes
 The microservice has the following routes:
