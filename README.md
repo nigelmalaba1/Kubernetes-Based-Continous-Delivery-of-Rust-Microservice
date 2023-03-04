@@ -76,31 +76,32 @@ This is a command in the Rust programming language that is used to compile a Rus
 # Kubernetes Deployment 
 ## Minikube Lab (based on official tutorial on https://kubernetes.io)
 
-Launch GitHub Codespace
+* Launch GitHub Codespace
 
-Run `minikube start` to start cluster
+* Run `minikube start` to start cluster
 
-Run `minikube dashboard --url` to view dashboard in a new terminal
+* Run `minikube dashboard --url` to view dashboard in a new terminal
 
-Hover over link and "follow link"
+* Hover over link and "follow link"
 
-Create a deployment: `kubectl create deployment hello-node --image=registry.k8s.io/e2e-test-images/agnhost:2.39 -- /agnhost netexec --http-port=8080`
-
-<img width="1434" alt="Screenshot 2023-03-04 at 3 38 15 PM" src="https://user-images.githubusercontent.com/123284219/222927756-0adce024-3d94-408e-a8a8-a77e6e09dfd1.png">
+* Create a deployment: `kubectl create deployment hello-node --image=registry.k8s.io/e2e-test-images/agnhost:2.39 -- /agnhost netexec --http-port=8080`
 
 
-View deployment: `kubectl get deployments`
-
-View pods: `kubectl get pods`
+            <img width="1434" alt="Screenshot 2023-03-04 at 3 38 15 PM" src="https://user-images.githubusercontent.com/123284219/222927756-0adce024-3d94-408e-a8a8-a77e6e09dfd1.png">
 
 
-Create service and expose it: `kubectl expose deployment hello-node --type=LoadBalancer --port=8080`
+* View deployment: `kubectl get deployments`
 
-View services: `kubectl get services`
+* View pods: `kubectl get pods`
 
-Curl the url shown, for example: `curl http://192.168.49.2:31839` or change to your URL.
 
-<img width="948" alt="Screenshot 2023-03-04 at 3 30 24 PM" src="https://user-images.githubusercontent.com/123284219/222927784-78ffd0a9-38fd-48a9-98b8-595c8d614058.png">
+* Create service and expose it: `kubectl expose deployment hello-node --type=LoadBalancer --port=8080`
+
+* View services: `kubectl get services`
+
+* Curl the url shown, for example: `curl http://192.168.49.2:31839` or change to your URL.
+
+            <img width="948" alt="Screenshot 2023-03-04 at 3 30 24 PM" src="https://user-images.githubusercontent.com/123284219/222927784-78ffd0a9-38fd-48a9-98b8-595c8d614058.png">
 
 
 
