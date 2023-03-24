@@ -71,7 +71,7 @@ This will create a binary (application) `microservice` package
     `touch main.rs` and `touch lib.rs` 
 
 5. Run `Cargo build`   
-This is a command in the Rust programming language that is used to compile a Rust project. It compiles the project's source code and its dependencies, and produces an executable binary file. The cargo build command can be run from the root directory of the project.
+This is a command to compile a Rust project. It compiles the project's source code and its dependencies, and produces an executable binary file. The cargo build command can be run from the root directory of the project.
 
 5. Set up Cargo.toml to determine the dependencies and build configuration of the project.
 
@@ -162,21 +162,17 @@ Cleanup
 
 ## Explanation of the architecture:
 
-The microservices are developed using Rust programming language on AWS Cloud9, which is a cloud-based integrated development environment (IDE). The code is version-controlled using GitHub and is stored in a GitHub repository.
+The microservice is developed using Rust programming language on AWS Cloud9, which is a cloud-based integrated development environment (IDE). The code is version-controlled using GitHub and is stored in a GitHub repository.
 
-The developers use GitHub Codespaces, a cloud-based development environment that allows developers to develop and test code without having to set up a local development environment.
 
-The Docker images for the microservices are built and stored in a Docker registry, such as Docker Hub.
+The Docker images for the microservice are built and stored in Docker Hub.
 
-The Kubernetes cluster is created using Minikube, a tool that allows you to run a Kubernetes cluster on a single machine. The deployment object is defined in Kubernetes to deploy the microservices and manage their resources.
+The Kubernetes cluster is created using Minikube. The deployment object is defined in Kubernetes to deploy the microservices and manage their resources.
 
-The service exposes the microservices to the outside world and routes the requests to the appropriate Kubernetes pods.
+The service exposes the microservice through port 8080 and routes the requests to the appropriate Kubernetes pods.
 
-Overall, this architecture enables developers to work on the microservices in a cloud-based environment without having to worry about local setup. The microservices can be easily deployed and scaled using Kubernetes.
 
 ## Project Presentation
 
 https://www.beautiful.ai/player/-NPQacppTuo7JwNYD92O
 
-## Conclusion
-This is a simple Actix microservice with multiple routes that you can use as a starting point for building your own microservice.
